@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Cosmetics Landing Page</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url("C:/Users/Dell/Downloads/cosmetics.JPG") no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Georgia', serif;
+        color: #fff;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px 60px;
+        background: transparent;
+        z-index: 1000;
+    }
+
+    .logo {
+        color: rgb(90, 88, 88);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+    }
+
+    .nav-links a {
+        color: rgb(90, 88, 88);
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    .center-container {
+        position: fixed;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        max-width: 500px;
+        z-index: 500;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        font-family: 'Times New Roman', serif;
+        font-weight: normal;
+        color: rgb(63, 63, 63);
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', serif;
+        font-weight: normal;
+        color: rgb(63, 63, 63);
+        margin-bottom: 30px;
+    }
+
+    .Shop-btn {
+        font-size: 0.9rem;
+        padding: 12px 28px;
+        color: rgba(0,0,0,0.85);
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #f5e6d3;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .Shop-btn:hover {
+        background: #f5e6d3;
+        color: #2c2c2c;
+    }
+
+    footer {
+        background-color: #f8e6ec;
+        color: #333;
+        padding: 30px 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        margin-top: 100vh;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+
+    footer a {
+        color: #c2185b;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #8e1144;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Secret Glow</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">❤</a>
+            <a href="#">🛒</a>
+        </div>
+    </nav>
+
+    <div class="center-container">
+        <h1>Beauty That Lasts</h1>
+        <h2>Glow Inside Out</h2>
+        <a href="#" class="Shop-btn">Shop Now</a>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold; font-size: 16px;">Secret Glow Cosmetics</p>
+        <p>Beauty that Glow within</p>
+        <p>
+            <a href="#">About Us</a> |
+            <a href="#">Shop</a> |
+            <a href="#">Contact</a>
+        </p>
+        <p>&copy; 2025 Secret Glow Cosmetics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

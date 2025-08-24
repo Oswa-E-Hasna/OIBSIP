@@ -1,0 +1,130 @@
+<html>
+<head>
+  <title>Contact - Oswa E Hasna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3; 
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d3557, #457b9d); 
+       padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: white;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1faee;
+      border-bottom: 2px solid #f1faee;
+      padding-bottom: 3px;
+    }
+    
+    .active {
+      border-bottom: 2px solid #f1faee;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff; 
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h1 {
+       color: #1d3557;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #457b9d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color:#1d3557;
+    }
+
+     footer {
+      text-align: center;
+      padding: 20px;
+      background: #1d3557;
+      color: #f1faee;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Oswa E Hasna</h2>
+    <nav>
+      <a href="file:///C:/Users/Dell/Documents/web%20lab%205%20home.html">Home</a>
+      <a href="file:///C:/Users/Dell/Documents/web%20lab%205%20resume.html">Resume</a>
+      <a href="file:///C:/Users/Dell/Documents/web%20lab%205%20contact.html" class="active">Contact me</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p style="text-align: center;">Have questions or need assistance? Reach out to me below!</p>
+    <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <div style="text-align: center;">
+          <button type="submit">Send Message</button>
+        </div>
+    </form>
+  </div>
+
+   <footer>
+    &copy; 2025 Oswa E Hasna | All Rights Reserved
+  </footer>
+
+   <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert(" Your message has been sent successfully!");
+    });
+    
+  </script>
+</body>
+</html>
